@@ -1,0 +1,10 @@
+/* A minimal CSS reset moved to public as requested */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { min-height: 100vh; text-rendering: optimizeLegibility; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; font-size: inherit; }
+ul[role='list'], ol[role='list'] { list-style: none; }
+button { font: inherit; }
+img, picture, svg, video, canvas { display: block; max-width: 100%; }
+input, textarea, select { font: inherit; }

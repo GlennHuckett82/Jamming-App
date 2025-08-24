@@ -1,0 +1,27 @@
+/* A minimal CSS reset */
+/* Box sizing rules */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Remove default margin */
+* { margin: 0; }
+
+/* Improve text rendering */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Set core body defaults */
+body { min-height: 100vh; text-rendering: optimizeLegibility; line-height: 1.5; }
+
+/* Reset headings */
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; font-size: inherit; }
+
+/* Reset ul/ol */
+ul[role='list'], ol[role='list'] { list-style: none; }
+
+/* Remove default button styles inheritance issues */
+button { font: inherit; }
+
+/* Images */
+img, picture, svg, video, canvas { display: block; max-width: 100%; }
+
+/* Inputs */
+input, textarea, select { font: inherit; }

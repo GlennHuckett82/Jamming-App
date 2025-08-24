@@ -2,6 +2,10 @@
 
 A React app to search Spotify and build public playlists (Codecademy Jammming project).
 
+Live
+- Production: https://jammming-gph1982-0824.surge.sh/
+- Repo: https://github.com/GlennHuckett82/Jamming-App
+
 Features
 - Search for tracks via Spotify Web API
 - Add/remove tracks to a local playlist
@@ -14,41 +18,29 @@ Tech
 
 Setup
 1. Install Node 18+
-2. Install dependencies:
-   npm install
-3. Start dev server:
-   npm run dev
-4. Build:
-   npm run build
+2. Install dependencies
+    - powershell
+       npm install
+3. Start dev server
+    - powershell
+       npm run dev
+4. Build
+    - powershell
+       npm run build
 
 Env/OAuth
 - Client ID is embedded for demo; rotate in Spotify Dashboard if needed.
-- Redirect URIs:
-  - http://127.0.0.1:3001/
-  - https://jammming-gph1982-0824.surge.sh/
+- Redirect URIs configured in Spotify Dashboard:
+   - http://127.0.0.1:3001/
+   - https://jammming-gph1982-0824.surge.sh/
 
-Deploy
-- Build and publish the dist/ folder with Surge:
-  npx surge ./dist jammming-gph1982-0824.surge.sh# Jammming (React + Vite)
+Deploy (Surge)
+1. Build
+    - powershell
+       npm run build
+2. Publish dist/ to your domain
+    - powershell
+       npx surge .\dist jammming-gph1982-0824.surge.sh
 
-A fast React starter for the Jammming project. Includes:
-
-- Vite for dev/build
-- Reset CSS
-- Google Fonts (Poppins, Work Sans)
-- Updated favicon
-
-## Run locally
-
-```powershell
-# from the Jammming folder
-npm install
-npm run dev
-```
-
-Then open the shown localhost URL.
-
-## Next steps
-- Implement Spotify auth (Implicit Grant or PKCE)
-- Components: SearchBar, SearchResults, Playlist, Track
-- Save playlist to user account
+Notes
+- In PowerShell, separate commands with a semicolon if running on one line, e.g.: npm run build; npx surge .\dist jammming-gph1982-0824.surge.sh
